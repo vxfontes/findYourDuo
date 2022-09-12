@@ -2,11 +2,9 @@
 
 * iniciando configurações dos três ambientes de desenvolvimento
 
-
 <br />
 
----
-## backend
+## ⚙️ backend
 
 
 ### :rocket: Technologies 
@@ -36,16 +34,12 @@ $ yarn dev
 
 <br />
 
----
-
-<br />
-
-## web
+## 💻 web
 
 ### :rocket: Technologies 
 > react.js / vite / typescript
 
-- criação do projeto usando **vite** -> yarn create vite
+- criação do projeto usando **vite** -> ```yarn create vite```
 - configurações no terminal mesmo com vite -> **_muito_** rapido
 - utilização do reactjs com typescript
 - utilização de interfaces em typescript para tipagem
@@ -55,4 +49,21 @@ $ yarn dev
 $ yarn dev
 
 # no terminal gera um link local para visualização da página do react
+```
+
+<br />
+
+## 📱 mobile
+
+### :rocket: Technologies 
+> expo / typescript
+
+- utilização do **expo** para facilitar na construção  -> ```expo init mobile```
+- utilizar aplicativo **expo go** no celular ou utilizar emulador
+
+```bash
+- expo start # you can open iOS, Android, or web from here, or run them directly with the commands below.
+- yarn android
+- yarn ios # requires an iOS device or macOS for access to an iOS simulator
+- yarn web
 ```
