@@ -34,6 +34,8 @@ $ node build/index.js
 $ yarn dev
 ```
 
+<br />
+
 ---
 
 <br />
@@ -46,6 +48,7 @@ $ yarn dev
 - criação do projeto usando **vite** -> yarn create vite
 - configurações no terminal mesmo com vite -> **_muito_** rapido
 - utilização do reactjs com typescript
+- utilização de interfaces em typescript para tipagem
 
 ```bash
 # rodando o projeto com vite

@@ -1,10 +1,25 @@
-import { useState } from 'react'
+// tipagem no typescript
+  //componente com nome props no final
+interface ButtonProps {
+  title: string
+}
+
+// parametro: tipo
+function Button(props: ButtonProps) {
+  return (
+    <button>
+      {props.title}
+    </button>
+  )
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1>hello</h1>
+    <>
+      <Button title="Send 1" />
+      <Button title="Send 2" />
+      <Button title="Send 3" />
+    </>
   )
 }
 
