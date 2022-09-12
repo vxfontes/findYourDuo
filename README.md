@@ -60,10 +60,13 @@ $ yarn dev
 
 - utilização do **expo** para facilitar na construção  -> ```expo init mobile```
 - utilizar aplicativo **expo go** no celular ou utilizar emulador
+- adicionando o script _"dev": "expo start --tunnel"_ para melhor utilização no dispositivo fisico
+- utiliza dos mesmos principios do react.js também utilizando o typescript
 
 ```bash
-- expo start # you can open iOS, Android, or web from here, or run them directly with the commands below.
-- yarn android
+- expo start
+- expo start --tunnel ou yarn dev # para utilização de um novo tipo de conexão com o celular
+- yarn android # abre no emulador
 - yarn ios # requires an iOS device or macOS for access to an iOS simulator
 - yarn web
 ```
