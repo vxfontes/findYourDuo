@@ -7,7 +7,7 @@
 
 ---
 ## backend
--------
+
 
 ### :rocket: Technologies 
 > node.js / typescript / express / hoppscotch / ts-node-dev
@@ -35,3 +35,21 @@ $ yarn dev
 ```
 
 ---
+
+<br />
+
+## web
+
+### :rocket: Technologies 
+> react.js / vite / typescript
+
+- criação do projeto usando **vite** -> yarn create vite
+- configurações no terminal mesmo com vite -> **_muito_** rapido
+- utilização do reactjs com typescript
+
+```bash
+# rodando o projeto com vite
+$ yarn dev
+
+# no terminal gera um link local para visualização da página do react
+```
