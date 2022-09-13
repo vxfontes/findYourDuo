@@ -28,6 +28,9 @@ $ yarn dev
     -> utilização para darkmode e responsividade
 - realizando configuração no arquivo gerado pelo tailwind init e criação de main css requisitado
 - baixando _extensão_ do postcss e do tailwind
+- colocando imagem como background com o tailwind e na pasta public aplicando no arquivo index.html
+- adicionando logo na pagina principal e iniciando a configuração -> gradiente do nome foi adicionando no arquivo de configuração do tailwind como bg-image
+- utilização das imagens dos games na tag 'a' enquanto não conectamos com a twitch
 
 ```bash
 # rodando o projeto com vite
