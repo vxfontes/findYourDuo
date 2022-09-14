@@ -21,7 +21,7 @@ $ yarn dev
 ## 💻 web
 
 ### :rocket: Technologies 
-> react.js / vite / typescript / tailwind css 
+> react.js / vite / typescript / tailwind css / photosphor
 
 - criação do css geral da aplicação
 - instalação do **tailwind** com potscss para estilizar componente através de classes 
@@ -31,6 +31,10 @@ $ yarn dev
 - colocando imagem como background com o tailwind e na pasta public aplicando no arquivo index.html
 - adicionando logo na pagina principal e iniciando a configuração -> gradiente do nome foi adicionando no arquivo de configuração do tailwind como bg-image
 - utilização das imagens dos games na tag 'a' enquanto não conectamos com a twitch
+- colocando gradiente preto em cada imagem e arrumando titulo
+- criando div debaixo e colocando botão e texto
+- para icones vamos utilizar a biblioteca **photosphor**
+- trocando a fonte importando no arquivo index.html e setando no arquivo tailwind
 
 ```bash
 # rodando o projeto com vite
