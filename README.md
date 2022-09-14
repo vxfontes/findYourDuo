@@ -50,7 +50,8 @@ $ yarn dev
 ### :rocket: Technologies 
 > expo / typescript
 
-- 
+- vamos adicionanar as pastas que baixamos no notion, onde importamos alguns assets e algumas configurações como theme: onde configuramos as cores principais da aplicação,
+    utils: onde um games.ts exportará um array com alguns games e suas imagens e mais assets para a pasta src
 
 ```bash
 - yarn dev # para utilização de um novo tipo de conexão com o celular
