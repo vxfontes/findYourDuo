@@ -12,7 +12,7 @@ export interface GameCardProps {
     bannerUrl: string; //enquanto não puxamos da própria url
 }
 
-interface GameProps {
+interface GameProps extends TouchableOpacityProps {
     data: GameCardProps;
 }
 
