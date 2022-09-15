@@ -48,10 +48,12 @@ $ yarn dev
 ## 📱 mobile
 
 ### :rocket: Technologies 
-> expo / typescript
+> expo / typescript / ngrok / react navigation
 
 - conectar com o backend usando useEffect -> no mobile ao inves de localhost colocamos o endereço ip
 - como o fetch nao funcionava de forma alguma no iphone, optou-se por usar **ngrok** onde colocamos o comando ngrok http ´nossaporta´ e conseguimos fazer a requisição
+- utilização da biblioteca **react navigation** para implementar navegação
+vamos usar a navegação stack onde uma página sobrepõe a outra e depois é descartada
 
 ```bash
 $ yarn porta # abrir a porta para mobile
