@@ -61,7 +61,8 @@ $ yarn dev
 - utilização da biblioteca **react navigation** -> primeiramente usaremos o react-native-safe-area-context para visualizar a aplicação apenas na área segura da tela
 - para fazer gradiente, utilizaremos a biblioteca **linear gradient**
 - criação de loading na página principal para carregamento das fontes -> criação da pasta screen / home -> _rnbc_ e stylesheet com _rnso_
-- criação de loading como componente
+- criação de loading como componente usando "bolinha" de loading do próprio react native
+- inicio da estilização da home com a criação de componentes titulo e subtitulo puxando o estilo do tema
 
 ```bash
 - yarn dev # para utilização de um novo tipo de conexão com o celular
