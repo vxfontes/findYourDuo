@@ -9,7 +9,7 @@
 ### :rocket: Technologies 
 > node.js / typescript / express / hoppscotch / ts-node-dev / prisma / SQLite / cors
 
-- 
+- sem alterações no backend, apenas utilizamos para conectar com o frontend
 
 ```bash
 # rodando projeto usando tsnd
@@ -50,9 +50,11 @@ $ yarn dev
 ### :rocket: Technologies 
 > expo / typescript
 
-- 
+- conectar com o backend usando useEffect -> no mobile ao inves de localhost colocamos o endereço ip
+- como o fetch nao funcionava de forma alguma no iphone, optou-se por usar **ngrok** onde colocamos o comando ngrok http ´nossaporta´ e conseguimos fazer a requisição
 
 ```bash
-- yarn dev # para utilização de um novo tipo de conexão com o celular
-- yarn android # abre no emulador
+$ yarn porta # abrir a porta para mobile
+$ yarn dev # para utilização de um novo tipo de conexão com o celular
+$ yarn android # abre no emulador
 ```
