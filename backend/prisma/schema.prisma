@@ -8,7 +8,26 @@ datasource db {
 }
 
 model Game {
-  id        String @id
+  id        String @id @default(uuid())
   title     String
   bannerUrl String
+
+  // referencia automatica do relacionamento
+  ads Ad[]
+}
+
+model Ad {
+  id              String   @id @default(uuid())
+  gameId          String
+  nickName        String
+  yearsPlaying    Int
+  discord         String
+  weekDays        String
+  hourStart       Int
+  hourEnd         Int
+  useVoiceChannel Boolean
+  createdAt       DateTime @default(now()) //definir valor padrão na criação
+
+  // relacionando todo anuncio em um jogo -> game Game
+  game Game @relation(fields: [gameId], references: [id])
 }

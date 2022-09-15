@@ -7,7 +7,7 @@
 ## ⚙️ backend
 
 ### :rocket: Technologies 
-> node.js / typescript / express / hoppscotch / ts-node-dev / prisma / SQLite
+> node.js / typescript / express / hoppscotch / ts-node-dev / prisma / SQLite / cors
 
 - entidades
     1. game: { id, title, bannerUrl }
@@ -26,6 +26,9 @@
 - damos um ``` yarn prisma migrate dev ``` para "converter" o banco em sql e gera-se um arquivo e no terminal pergunta sobre o nome da migration -> funciona como versionamento da db como commit no git
 - utilização de extensao para visualizar banco de dados -> mostra tabelas criadas e migrations ja feitas -> ou...
 - **utilizar comando ```yarn prisma studio``` gera uma interface gráfica com nossa database**
+- criando funcionalidade das rotas e formatando com o proprio prisma a forma de exibição
+- criando funções de conversão de horas
+- instalando **cors** para proteger informações do backend que não desejamos que o frontend acesse 
 
 ```bash
 # rodando projeto usando tsnd
