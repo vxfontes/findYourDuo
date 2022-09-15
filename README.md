@@ -55,6 +55,13 @@ $ yarn dev
 - criação de stylesheet usando o codigo _rnso_ com a extensão usando o tema e _rnbc_ para criar componente
 - criação do background image que recebe uma children direto do app
 - para usar os arquivos png cria-se uma pasta @types onde definimos os tipos
+- trazemos esse background para a tela inicial
+- melhoramos a visibilidade a statusbar a clareando mudando seu estilo na propria tag
+- instalando fonte com o próprio expo e importando no app
+- utilização da biblioteca **react navigation** -> primeiramente usaremos o react-native-safe-area-context para visualizar a aplicação apenas na área segura da tela
+- para fazer gradiente, utilizaremos a biblioteca **linear gradient**
+- criação de loading na página principal para carregamento das fontes -> criação da pasta screen / home -> _rnbc_ e stylesheet com _rnso_
+- criação de loading como componente
 
 ```bash
 - yarn dev # para utilização de um novo tipo de conexão com o celular
