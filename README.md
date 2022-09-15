@@ -34,6 +34,7 @@ $ yarn prisma studio
 - puxando informações do backend usando useeffect
 - tipagem no usestate<>()
 - utilização de biblioteca **radix-ui** sem estilização para fazer modais mais acessiveis -> componentes sem estilização que trazem comportamentos comuns que vemos na web
+- criação de component input extendendo htmlinputattribute
 
 ```bash
 # rodando o projeto com vite
