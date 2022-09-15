@@ -63,6 +63,9 @@ $ yarn dev
 - criação de loading na página principal para carregamento das fontes -> criação da pasta screen / home -> _rnbc_ e stylesheet com _rnso_
 - criação de loading como componente usando "bolinha" de loading do próprio react native
 - inicio da estilização da home com a criação de componentes titulo e subtitulo puxando o estilo do tema
+- **todo componente que pode ser clicado, importamos o touchableOpacity e touchableOpacityProps (pra usar com ...rest) e colocamos no lugar da view**
+- ao colocar o termo _export_ antes de interface conseguimos exportar e utiliza-la em outros lugares
+- para exibir listas, usa-se o _flatList_
 
 ```bash
 - yarn dev # para utilização de um novo tipo de conexão com o celular
