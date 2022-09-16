@@ -18,9 +18,10 @@ export interface DuoCardProps {
 
 interface DataDuoProps {
     data: DuoCardProps;
+    onConnect: () => void;
 }
 
-export function DuoCard({ data }: DataDuoProps) {
+export function DuoCard({ data, onConnect }: DataDuoProps) {
     return (
         <View style={styles.container}>
             <DuoInfo label='Nome' value={data.nickName} />
@@ -29,7 +30,7 @@ export function DuoCard({ data }: DataDuoProps) {
             <DuoInfo label='Chamada de áudio?' value={data.useVoiceChannel ? "Sim" : "Não"}
                 colorValue={data.useVoiceChannel ? THEME.COLORS.SUCCESS : THEME.COLORS.ALERT}/>
 
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={onConnect}>
                 <GameController color={THEME.COLORS.TEXT} size={20}/>
                 <Text style={styles.buttonTitle}>Conectar</Text>
             </TouchableOpacity>

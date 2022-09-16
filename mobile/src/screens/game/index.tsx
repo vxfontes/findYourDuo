@@ -3,7 +3,7 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 import { Background } from '../../components/background';
 import { styles } from './styles';
 import { GameParams } from '../../@types/navigation';
-import { View, TouchableOpacity, Image, FlatList } from 'react-native';
+import { View, TouchableOpacity, Image, FlatList, Text } from 'react-native';
 import { Entypo } from '@expo/vector-icons'
 import { THEME } from '../../theme';
 import logoImg from '../../assets/logo-nlw-esports.png';
@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react';
 
 export function Game() {
 
-    const [duos, setDuos] = useState<DuoCardProps[]>([]); 
+    const [duos, setDuos] = useState<DuoCardProps[]>([]);
     const navitation = useNavigation();
     const route = useRoute();
     const game = route.params as GameParams;
@@ -46,9 +46,14 @@ export function Game() {
 
                 <Heading title={game.title} subtitle='Conecte-se e comece a jogar!' />
 
-                <FlatList data={duos} keyExtractor={item => item.id} renderItem={({ item }) => (
-                    <DuoCard data={item} />
-                )} />
+                <FlatList data={duos} keyExtractor={item => item.id} horizontal showsHorizontalScrollIndicator={false}
+                    contentContainerStyle={[duos.length === 0 ? styles.emptyListContent : styles.contentList]} 
+                    style={styles.containerList} ListEmptyComponent={() => (
+                        <Text style={styles.emptyList}>Não há anúncios publicados ainda.</Text>
+                    )}
+                    renderItem={({ item }) => (
+                        <DuoCard data={item} onConnect={() => { }} />
+                    )} />
             </SafeAreaView>
         </Background>
     );
