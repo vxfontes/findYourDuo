@@ -5,6 +5,7 @@ import logoImg from './assets/LogoESports.svg';
 import GameBanner from './components/gameBanner';
 import AdBanner from './components/adBanner';
 import DialogModal from './components/dialog';
+import axios from "axios";
 
 interface Game {
     id: string;
@@ -20,10 +21,10 @@ function App() {
     const [games, setGames] = useState<Game[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:3333/games')
-            .then(res => res.json())
-            .then(data => setGames(data))
-    }, [])
+        axios('http://localhost:3333/games').then(response => {
+            setGames(response.data);
+        });
+    }, []);
 
     return (
         <div className='max-w-[1344px] mx-auto flex flex-col items-center my-20'>

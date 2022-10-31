@@ -1,6 +1,6 @@
-<h1> Aula 4 </h1>
+<h1> Aula 5 </h1>
 
-* realizando a conexão do backend com o frontend
+* finalização do projeto
 
 <br />
 
@@ -29,12 +29,9 @@ $ yarn prisma studio
 ### :rocket: Technologies 
 > react.js / vite / typescript / tailwind css / photosphor
 
-- transformar ancora que representa o jogo em um componente
-- component de publicar anuncio
-- puxando informações do backend usando useeffect
-- tipagem no usestate<>()
-- utilização de biblioteca **radix-ui** sem estilização para fazer modais mais acessiveis -> componentes sem estilização que trazem comportamentos comuns que vemos na web
-- criação de component input extendendo htmlinputattribute
+- usar checkbox do radix
+- estilizando select do formulario
+- dias da semana com radix toggle group
 
 ```bash
 # rodando o projeto com vite
@@ -50,13 +47,7 @@ $ yarn dev
 ### :rocket: Technologies 
 > expo / typescript / ngrok / react navigation / photosphor
 
-- conectar com o backend usando useEffect -> no mobile ao inves de localhost colocamos o endereço ip
-- como o fetch nao funcionava de forma alguma no iphone, optou-se por usar **ngrok** onde colocamos o comando ngrok http ´nossaporta´ e conseguimos fazer a requisição
-- utilização da biblioteca **react navigation** para implementar navegação
-- vamos usar a navegação stack onde uma página sobrepõe a outra e depois é descartada
-- criação da página de exibição de anuncio
-- renderizando o card de anuncio em uma flatlist
-- baixando phosphor para utilização de icones
+- 
 
 ```bash
 $ yarn porta # abrir a porta para mobile

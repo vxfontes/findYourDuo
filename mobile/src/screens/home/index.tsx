@@ -16,7 +16,7 @@ export function Home() {
   const navigation = useNavigation()
 
   useEffect(() => {
-    fetch('https://3547-179-54-104-139.sa.ngrok.io/games')
+    fetch('http://192.168.0.103:3333/games')
       .then(res => res.json())
       .then((data) => setGames(data))
   }, []);

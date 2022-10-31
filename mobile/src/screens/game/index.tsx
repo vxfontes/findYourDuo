@@ -24,7 +24,7 @@ export function Game() {
     }
 
     useEffect(() => {
-        fetch(`https://3547-179-54-104-139.sa.ngrok.io/games/${game.id}/ads`)
+        fetch(`http://192.168.0.103:3333/games/${game.id}/ads`)
             .then(res => res.json())
             .then((data) => setDuos(data))
     }, []);
